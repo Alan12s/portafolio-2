@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica de portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#AboutMe">About me</a></li>
+        <li><a href="#SKILL">SKILLS &#x25BE;</a>
+        <ul class="dropdown">
+            <li><a href="#file">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">PHP</a></li>
+        </ul>
+        </li>
+        <li><a href="#Proyectos">Project &#x25BE;</a>
+        <ul class="dropdown">
+            <li><a href="#file">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">PHP</a></li>
+        </ul>
+        <li><a href="#">Certificades </a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="profile-container">
+        <img class="profile-pic circular--square" src="../imagenes que puedo usar generalmente/perfil.jpg" />
+        <span>!Hola a todos como estan¡ Soy Alan Rodriguez.</span>
+    </div>
+    </header>
+
+    <div class="container">
+        <div class="skills-section">
+            <div class="technical-skills">
+                <h1>Habilidades Técnicas</h1>
+                <label for="file">HTML:</label>
+                <progress id="file" max="100" value="80">80%</progress><br>
+                <label for="file">JAVASCRIPT:</label>
+                <progress id="file" max="100" value="30">30%</progress><br>
+                <label for="file">CSS:</label>
+                <progress id="file" max="100" value="40">40%</progress><br>
+                <label for="file">PHP:</label>
+                <progress id="file" max="100" value="40">40%</progress><br>
+                <label for="file">MYSQL:</label>
+                <progress id="file" max="100" value="60">60%</progress><br>
+                <label for="file">BOOSTRAP:</label>
+                <progress id="file" max="100" value="80">80%</progress><br>
+                <label for="file">PYTHON:</label>
+                <progress id="file" max="100" value="20">20%</progress><br>
+                <label for="file">REACT Y REACT-NATIVE:</label>
+                <progress id="file" max="100" value="5">5%</progress><br>
+                <label for="file">Excel:</label>
+                <progress id="file" max="100" value="46">46%</progress><br>
+            </div>
+
+            <div class="soft-skills">
+                <h1>Habilidades Blandas</h1>
+                <ul>
+                    <li>Comunicación efectiva</li><br>
+                    <li>Trabajo en equipo</li><br>
+                    <li>Resolución de problemas</li><br>
+                    <li>Adaptabilidad</li><br>
+                    <li>Creatividad</li><br>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="AboutMe">
+        <section class="sobreMi" id="AboutMe">
+            <h1>Sobre Mi</h1>
+            <p>Hola! Soy Alan, un gusto conocerte. Me especializo como desarrollador de software, con un enfoque preferencial en el backend. Mis pasatiempos favoritos incluyen programar, leer y aprender nuevos idiomas.
+
+                En la actualidad, cuento con experiencia en varios proyectos independientes, que puedes explorar más detalladamente en la sección correspondiente. A pesar de haber adquirido conocimientos durante mis prácticas profesionales, estoy buscando oportunidades adicionales para demostrar y expandir mis habilidades.
+            </p>
+        </section>
+    </div><br><hr>
+    <div id="Proyectos">
+        <h1>#100Days100Projects - All Projects</h1>
+        <div id="app"></div>
+
+        
+        
+    <footer class="PieDePagina">
+        <p>&copy; 2024 Alan Rodriguez. Todos los derechos reservados.</p><br>
+        <button class="download" onclick="descargarCV()">
+            <span class="descargar">Descarga mi CV</span>
+        </button>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

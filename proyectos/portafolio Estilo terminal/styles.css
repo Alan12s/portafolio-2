@@ -1,0 +1,81 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal {
+    background-color: #2d2d2d;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+}
+
+.terminal-header {
+    background-color: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.buttons span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.buttons .close {
+    background-color: #ff5f56;
+}
+
+.buttons .minimize {
+    background-color: #ffbd2e;
+}
+
+.buttons .maximize {
+    background-color: #27c93f;
+}
+
+.title {
+    font-size: 14px;
+}
+
+.terminal-body {
+    padding: 10px;
+    overflow-y: auto;
+    height: 400px;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 10px;
+}
+
+#input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+}
