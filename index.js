@@ -46,8 +46,9 @@ const app = document.getElementById('app');
 const projects = [
     { nr: '001', name: 'Calculadora', path: 'proyectos/calculadora/index.html', image: 'Calculadora.png' },
     { nr: '002', name: 'To-Do List', path: 'proyectos/todo-list/index.html', image: 'To do list app.png' },
-    { nr: '003', name: 'Weather App', path: 'proyectos/weather-app/index.html', image: 'random3.png' },
-    { nr: '004', name: 'PortafolioTerminal', path: 'proyectos/portafolio Estilo terminal/index.html', image: 'Terminal.png' },
+    { nr: '003', name: 'Weather App con API', path: 'proyectos/react_weather_app-main/src/App.js', image: 'Clima.png' },
+    { nr: '004', name: 'reloj mundial', path: 'proyectos/reloj-mundial-app-main/src/App.js', image: 'Reloj-mundial.png' },
+    { nr: '005', name: 'PortafolioTerminal', path: 'proyectos/portafolio Estilo terminal/index.html', image: 'Terminal.png' },
     // Añade más proyectos aquí
 ];
 

@@ -1,32 +1,46 @@
-const input = document.getElementById('input');
+const terminal = document.querySelector('.terminal');
 const output = document.getElementById('output');
+const input = document.getElementById('input');
+const prompt = document.querySelector('.prompt');
 
-input.addEventListener('keydown', (event) => {
+input.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-        processCommand(input.value);
+        let command = input.value.trim();
+        executeCommand(command);
         input.value = '';
     }
 });
 
-function processCommand(command) {
-    let outputText;
-    switch (command.toLowerCase()) {
+function executeCommand(command) {
+    let response;
+    switch (command) {
         case 'help':
-            outputText = 'Available commands: about, projects, contact';
+            response = 'Available commands: help, about, skills, projects, contact';
             break;
         case 'about':
-            outputText = 'I am Alan Rodríguez, a software developer based in San Juan, Argentina.';
+            response = `Hello! I'm Alan Rodriguez, a software developer with a focus on backend development. I enjoy programming, reading, and learning new languages.`;
+            break;
+        case 'skills':
+            response = `Technical Skills:\nHTML: 80%\nJavaScript: 30%\nCSS: 40%\nPHP: 40%\nMySQL: 60%\nBootstrap: 80%\nPython: 20%\nReact & React Native: 5%\nExcel: 46%`;
             break;
         case 'projects':
-            outputText = '1. Project One\n2. Project Two\n3. Project Three';
+            response = `Project 1: [Description of Project 1]\nProject 2: [Description of Project 2]\nProject 3: [Description of Project 3]`;
             break;
         case 'contact':
-            outputText = 'Email: alan@example.com\nLinkedIn: linkedin.com/in/alan-rodriguez';
+            response = `You can reach me at rodriguezalanm731@gmail.com or +2645263370.`;
             break;
         default:
-            outputText = `'${command}' is not recognized as an internal or external command, operable program or batch file.`;
+            response = 'Command not found. Type "help" for a list of available commands.';
     }
-    output.innerHTML += `<div><span class="prompt">guest@portfolio:~$</span> ${command}</div>`;
-    output.innerHTML += `<div>${outputText}</div>`;
-    output.scrollTop = output.scrollHeight;
+    appendOutput(response);
 }
+
+function appendOutput(text) {
+    let newLine = document.createElement('div');
+    newLine.textContent = text;
+    output.appendChild(newLine);
+    terminal.scrollTop = terminal.scrollHeight;
+}
+
+// Welcome message
+appendOutput('Welcome to Alan Rodriguez\'s terminal portfolio! Type "help" to see the list of available commands.');

@@ -9,7 +9,7 @@
 <body>
     <header>
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#Home">Home</a></li>
         <li><a href="#AboutMe">About me</a></li>
         <li><a href="#SKILL">SKILLS &#x25BE;</a>
         <ul class="dropdown">
@@ -27,9 +27,9 @@
             <li><a href="#">PHP</a></li>
         </ul>
         <li><a href="#">Certificades </a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#Contact">Contact</a></li>
     </ul>
-    <div class="profile-container">
+    <div class="profile-container" id="Home">
         <img class="profile-pic circular--square" src="perfil.jpg" />
         <span>!Hola a todos como estan¡ Soy Alan Rodriguez.</span>
     </div>
@@ -82,13 +82,21 @@
         </section>
     </div><br><hr>
     <div id="Proyectos">
-        <h1>#100Days100Projects - All Projects</h1>
+        <h1>PROYECTOS</h1>
         <div id="app"></div>
-
-        
-        
+    </div><br><hr>
+    <div class="Contacto" id="Contact">
+        <h2>Contacto</h2>
+        <form action="contacto.php" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="date" name="fecha">
+            <textarea name="asunto" cols="30" rows="5" placeholder="Asunto a comunicar" required></textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </form>
+    </div>
     <footer class="PieDePagina">
-        <p>&copy; 2024 Alan Rodriguez. Todos los derechos reservados.</p><br>
+        <p>&copy; Todos los derechos reservados a: Alan Rodriguez-Desarrollado el 2024.</p><br>
         <button class="download" onclick="descargarCV()">
             <span class="descargar">Descarga mi CV</span>
         </button>
