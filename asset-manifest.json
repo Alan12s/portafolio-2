@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/portafolio-2/proyectos/react_weather_app-main/static/css/main.e233d3fc.css",
+    "main.js": "/portafolio-2/proyectos/react_weather_app-main/static/js/main.20ddb0cc.js",
+    "index.html": "/portafolio-2/proyectos/react_weather_app-main/index.html",
+    "main.e233d3fc.css.map": "/portafolio-2/proyectos/react_weather_app-main/static/css/main.e233d3fc.css.map",
+    "main.20ddb0cc.js.map": "/portafolio-2/proyectos/react_weather_app-main/static/js/main.20ddb0cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e233d3fc.css",
+    "static/js/main.20ddb0cc.js"
+  ]
+}
